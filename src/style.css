@@ -1,0 +1,130 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* BASIC */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+/* HEADER */
+
+header {
+  /* Rectangle */
+
+  position: absolute;
+  height: 60px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+
+  background: #F0F0F0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.122);
+}
+
+#title-link {
+  display: block;
+  text-align: center;
+  margin: 17px 0 0 0;
+  color: #BCBEC0;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+
+#logo {
+  /* LogoNoText */
+
+  position: absolute;
+  width: 34px;
+  height: 27px;
+  left: 16px;
+  top: 16px;
+}
+
+
+#menu-bars {
+  /* bars-solid */
+
+  position: absolute;
+  width: 26.25px;
+  height: 30px;
+  right: 14.75px;
+  top: 15px;
+
+  cursor: pointer;
+}
+
+#close-icon {
+  /* close */
+
+  position: absolute;
+  width: 22px;
+  right: 17px;
+  top: 19px;
+
+  visibility: hidden;
+}
+
+nav {
+  /* Rectangle */
+
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: 60px;
+
+  background: #F0F0F0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.122);
+
+  visibility: hidden;
+}
+
+nav > ul > li {
+  text-align: center;
+  margin: 30px auto;
+  font-size: 1.2em;
+  display: block;
+}
+
+a.nav-items {
+  text-decoration: none;
+  color: #808080;
+  display: inline-block;
+}
+
+a.nav-items:after {
+  background:#808080;
+  content: "";
+  display: block;
+  height: 2px;
+  transition: width 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+  margin: 10px auto 0 auto;
+}
+
+a.nav-items:hover:after {
+  width: 100%;
+}
