@@ -9,19 +9,18 @@
 </head>
 <body>
 
-<header>
+<header class="main-header">
 
   <!-- LOGO -->
   <a href="index.html">
-    <svg id="logo" width="34" height="27" viewBox="0 0 34 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg id="logo" class="logo" mlns="http://www.w3.org/2000/svg">
       <path d="M15.1414 0L0 27H30.2812L15.1414 0Z" fill="#F7CFD0"/>
       <path d="M21.6573 0L18.4206 5.77207L9.31297 22.0109H27.5267H34L21.6573 0Z" fill="#BCBEC0"/>
     </svg>
   </a>
     
-
-  <!-- MENU BARS -->
-  <svg id="menu-bars" width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- MENU BARS AND CLOSE ICON -->
+  <svg id="menu-bars" class="menu-bars" xmlns="http://www.w3.org/2000/svg">
     <g clip-path="url(#clip0)">
     <path d="M0.9375 7.73438H25.3125C25.8303 7.73438 26.25 7.31467 26.25 6.79688V4.45312C26.25 3.93533 25.8303 3.51562 25.3125 3.51562H0.9375C0.419707 3.51562 0 3.93533 0 4.45312V6.79688C0 7.31467 0.419707 7.73438 0.9375 7.73438ZM0.9375 17.1094H25.3125C25.8303 17.1094 26.25 16.6897 26.25 16.1719V13.8281C26.25 13.3103 25.8303 12.8906 25.3125 12.8906H0.9375C0.419707 12.8906 0 13.3103 0 13.8281V16.1719C0 16.6897 0.419707 17.1094 0.9375 17.1094ZM0.9375 26.4844H25.3125C25.8303 26.4844 26.25 26.0647 26.25 25.5469V23.2031C26.25 22.6853 25.8303 22.2656 25.3125 22.2656H0.9375C0.419707 22.2656 0 22.6853 0 23.2031V25.5469C0 26.0647 0.419707 26.4844 0.9375 26.4844Z" fill="#BCBEC0"/>
     </g>
@@ -31,16 +30,16 @@
     </clipPath>
     </defs>
   </svg>
-
-  <!-- NAVIGATION -->
-  <svg id="close-icon" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg id="close-icon" class="close-icon hidden" xmlns="http://www.w3.org/2000/svg">
     <path d="M15.17 11L21.4244 4.74562C22.1919 3.97812 22.1919 2.73375 21.4244 1.96562L20.0344 0.575625C19.2669 -0.191875 18.0225 -0.191875 17.2544 0.575625L11 6.83L4.74563 0.575625C3.97813 -0.191875 2.73375 -0.191875 1.96563 0.575625L0.575625 1.96562C-0.191875 2.73312 -0.191875 3.9775 0.575625 4.74562L6.83 11L0.575625 17.2544C-0.191875 18.0219 -0.191875 19.2662 0.575625 20.0344L1.96563 21.4244C2.73313 22.1919 3.97813 22.1919 4.74563 21.4244L11 15.17L17.2544 21.4244C18.0219 22.1919 19.2669 22.1919 20.0344 21.4244L21.4244 20.0344C22.1919 19.2669 22.1919 18.0225 21.4244 17.2544L15.17 11Z" fill="#BCBEC0"/>
-    </svg>
-    
-  <a id="title-link" href="index.html">
+  </svg>
+  
+  <a id="title-link" class="title-link hidden" href="index.html">
     <h1>Ale Araujo Photography</h1>
   </a>
-  <nav>
+
+  <!-- NAVIGATION -->
+  <nav id="nav" class="main-nav hidden">
     <ul>
       <li><a class="nav-items" href="porfolio.html">Porfolio</a></li>
       <li><a class="nav-items" href="stories.html">Stories</a></li>
